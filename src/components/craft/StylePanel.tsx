@@ -2,6 +2,7 @@
 import React from 'react';
 import { useEditor } from '@craftjs/core';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 export const StylePanel = () => {
   const { selected, actions, query } = useEditor((state, query) => {
