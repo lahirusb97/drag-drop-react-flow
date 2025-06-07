@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { EmailTemplateEditor } from '../email-template';
+import { EmailTemplateEditor } from '../components/email-template-builder';
 
 const EmailBuilder = () => {
   const handleSave = (templateData) => {
