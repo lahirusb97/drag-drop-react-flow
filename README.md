@@ -10,6 +10,8 @@ npm run dev
 ```
 
 The editor page is available at the root route (`/`).
+All files in `src/components/email-template-builder` are self contained so you can
+copy that folder to another Next.js or React project and reuse the editor.
 
 ## Folder structure
 
