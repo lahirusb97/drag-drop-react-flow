@@ -3,6 +3,7 @@ import React from 'react';
 import { useNode, UserComponent } from '@craftjs/core';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { TextToolbar, ContainerToolbar, ImageToolbar, LinkToolbar, ButtonToolbar } from './Toolbar';
 
 // Text Component
 export const TextComponent: UserComponent = ({ text = 'Edit this text', fontSize = '16px', color = '#000000', ...props }) => {
@@ -28,7 +29,7 @@ TextComponent.craft = {
     color: '#000000'
   },
   related: {
-    toolbar: () => import('./Toolbar').then(mod => mod.TextToolbar)
+    toolbar: TextToolbar
   }
 };
 
@@ -55,7 +56,7 @@ ContainerComponent.craft = {
     padding: '16px'
   },
   related: {
-    toolbar: () => import('./Toolbar').then(mod => mod.ContainerToolbar)
+    toolbar: ContainerToolbar
   }
 };
 
@@ -83,7 +84,7 @@ ImageComponent.craft = {
     width: '100%'
   },
   related: {
-    toolbar: () => import('./Toolbar').then(mod => mod.ImageToolbar)
+    toolbar: ImageToolbar
   }
 };
 
@@ -112,7 +113,7 @@ LinkComponent.craft = {
     color: '#007bff'
   },
   related: {
-    toolbar: () => import('./Toolbar').then(mod => mod.LinkToolbar)
+    toolbar: LinkToolbar
   }
 };
 
@@ -140,6 +141,6 @@ ButtonComponent.craft = {
     textColor: '#ffffff'
   },
   related: {
-    toolbar: () => import('./Toolbar').then(mod => mod.ButtonToolbar)
+    toolbar: ButtonToolbar
   }
 };
