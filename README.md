@@ -17,8 +17,8 @@ The editor page is available at the root route (`/`).
 src/
   components/
     email-template-builder/  # reusable email builder
-  pages/
-    _app.js
-    index.js
-    404.js
+  app/
+    layout.js
+    page.js
+    not-found.js
 ```
