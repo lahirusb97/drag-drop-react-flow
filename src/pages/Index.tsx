@@ -1,8 +1,8 @@
 
-import { EmailTemplateBuilder } from "../components/EmailTemplateBuilder";
+import { CraftEmailBuilder } from "../components/craft/CraftEmailBuilder";
 
 const Index = () => {
-  return <EmailTemplateBuilder />;
+  return <CraftEmailBuilder />;
 };
 
 export default Index;
