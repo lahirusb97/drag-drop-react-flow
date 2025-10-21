@@ -15,7 +15,7 @@ A complete drag-and-drop email template builder built with React and CraftJS. Th
 
 ## Installation
 
-1. Copy this entire `email-template` folder to your project
+1. Copy this entire `email-template-builder` folder to your project
 2. Install required dependencies:
 
 ```bash
@@ -25,7 +25,7 @@ npm install @craftjs/core @craftjs/utils lucide-react
 ## Basic Usage
 
 ```jsx
-import { EmailTemplateEditor } from './email-template';
+import { EmailTemplateEditor } from './email-template-builder';
 
 function App() {
   const handleSave = (templateData) => {
@@ -52,7 +52,7 @@ import {
   EmailTemplateProvider, 
   useEmailTemplate,
   EmailTemplateEditor 
-} from './email-template';
+} from './email-template-builder';
 
 function CustomEmailBuilder() {
   const { saveTemplate, exportEmailHTML, loadTemplate } = useEmailTemplate();
@@ -88,7 +88,7 @@ function App() {
 ### Loading Existing Templates
 
 ```jsx
-import { EmailTemplateEditor } from './email-template';
+import { EmailTemplateEditor } from './email-template-builder';
 
 function App() {
   const existingTemplate = {
@@ -139,7 +139,7 @@ import {
   generatePlainText,
   validateEmailStructure,
   validateEmailRequirements 
-} from './email-template/utils/emailExport';
+} from './email-template-builder/utils/emailExport';
 
 // Generate HTML from template JSON
 const html = generateEmailHTML(templateData);
@@ -152,7 +152,7 @@ console.log(validation.warnings);
 ## Folder Structure
 
 ```
-email-template/
+email-template-builder/
 ├── components/          # React components
 │   ├── EmailTemplateEditor.js
 │   ├── UserComponents.js
